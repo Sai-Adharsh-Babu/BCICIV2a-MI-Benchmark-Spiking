@@ -1,4 +1,4 @@
-# Neural Spike Simulation and Bayesian Decoding
+# Reproducible Motor-Imagery EEG Decoding on BCICIV-2a with Strong Baselines, Per-Subject Analysis, and Ablations
 
 ## Overview
 This project explores how spiking neural activity can be modeled and decoded using computational methods.  
