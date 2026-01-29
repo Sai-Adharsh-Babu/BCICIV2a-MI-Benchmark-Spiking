@@ -1,0 +1,9 @@
+Spiking simulation + decoding (Brian2)
+- trials: 200
+- neurons: 30
+- trial duration: 1.000s
+- base rate: 12.00 Hz
+- modulation max: 8.00 Hz
+- classifier: Poisson Naive Bayes (custom)
+- test size: 0.30
+- accuracy: 1.0000
