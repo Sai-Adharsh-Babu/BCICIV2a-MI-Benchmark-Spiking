@@ -1,0 +1,8 @@
+# Abstract
+
+This project presents a reproducible benchmark for decoding left-versus-right motor imagery from the BCI Competition IV-2a (BCICIV_2a) EEG dataset. 
+Using MOABB/MNE for standardized data access and preprocessing, trials are band-pass filtered and segmented in a fixed post-cue window, then transformed into spatial features using Common Spatial Patterns (CSP). 
+Decoding is evaluated with CSP+LDA (a classical motor-imagery baseline) and CSP+Gaussian Naive Bayes, alongside chance and majority-class baselines to contextualize performance. 
+Across nine subjects, the main configuration (8–30 Hz, CSP=6) achieves 0.752 ± 0.138 accuracy with CSP+LDA and 0.690 ± 0.143 with CSP+GaussianNB (chance=0.50, majority=0.50). 
+Robustness is assessed via an ablation study sweeping frequency bands (8–12 Hz, 13–30 Hz, 8–30 Hz) and CSP component counts (2, 4, 6, 8), showing that performance is not driven by a single tuned choice. 
+In a separate optional module, spiking activity is simulated using Brian2 and validated with Elephant spike-train statistics, with Poisson Naive Bayes used to decode known ground-truth states; this component is explicitly framed as a simulation study rather than physiological inference from EEG.
