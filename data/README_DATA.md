@@ -1,11 +1,8 @@
 # Data Availability
 
-This project uses the **EEG Motor Imagery Dataset (BCICIV_2a)** provided by the BCI Competition IV.
+This repository does **not** redistribute the BCICIV_2a (BCI Competition IV-2a) EEG dataset.
 
-Due to licensing and privacy restrictions, the dataset itself **cannot be redistributed** in this repository.
+The EEG benchmarking code uses **MOABB/MNE**, which will **automatically download and cache** the dataset on first run.
 
-If you would like to use the same data, it can be obtained freely for research purposes from the official source:
-
-👉 [BCI Competition IV Dataset 2a – Official Download Page](http://www.bbci.de/competition/iv/)
-
-Once downloaded, place the dataset CSV files in this folder (`/data`) before running the code.
+By default (in this repo), MOABB caches the dataset under:
+- `results/moabb_data/`
