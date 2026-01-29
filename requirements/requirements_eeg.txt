@@ -1,1 +1,8 @@
-
+numpy>=2.0
+scipy
+matplotlib
+pandas
+scikit-learn
+mne
+moabb
+filelock
