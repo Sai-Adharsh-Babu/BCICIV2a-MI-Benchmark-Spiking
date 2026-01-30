@@ -1,4 +1,3 @@
-# Ensure images are stored as normal binary files (not LFS pointers)
-*.png -filter -diff -merge -text
-*.jpg -filter -diff -merge -text
-*.jpeg -filter -diff -merge -text
+*.png binary
+*.jpg binary
+*.jpeg binary
