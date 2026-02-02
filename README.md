@@ -1,5 +1,4 @@
-# Reproducible Motor-Imagery EEG Decoding on BCICIV-2a with Strong Baselines, Per-Subject Analysis, and Ablations  
-**+ Synthetic Spiking Simulation & Bayesian Decoding (Brian2 + Elephant)**
+# Reproducible Motor-Imagery EEG Decoding on BCICIV-2a with Strong Baselines, Per-Subject Analysis, and Ablations + Synthetic Spiking Simulation & Bayesian Decoding (Brian2 + Elephant)
 
 ## Overview
 
