@@ -12,7 +12,6 @@ To keep claims clear and credible, the project is organized into:
 ---
 
 ## Key Features (What makes it “strong”)
-
 ### EEG (BCICIV_2a)
 - **Chance baseline** (sanity check)
 - **Majority-class baseline** (guards against imbalance)
@@ -33,7 +32,6 @@ To keep claims clear and credible, the project is organized into:
 ---
 
 ## Objectives
-
 ### EEG Benchmark (BCICIV_2a)
 - Load and preprocess BCICIV_2a using MOABB/MNE
 - Extract CSP spatial features
@@ -50,7 +48,6 @@ To keep claims clear and credible, the project is organized into:
 ---
 
 ## Tools & Libraries
-
 - **Python 3.10+ (recommended: 3.11 works)**
 - EEG:
   - `mne`, `moabb`
@@ -64,7 +61,6 @@ To keep claims clear and credible, the project is organized into:
 ---
 
 ## Dataset (BCICIV_2a)
-
 This project uses the **BCI Competition IV Dataset 2a** (motor imagery EEG).
 
 **The dataset is not included** in this repository due to licensing/distribution restrictions.  
@@ -73,9 +69,6 @@ However, the EEG pipeline uses **MOABB**, which can automatically download the d
 > If MOABB fails to download (network/firewall), download from the official competition source and configure MOABB accordingly.
 
 ---
-
-## Repository Structure
-
 
 ## Repository Structure  
 ```
@@ -126,7 +119,6 @@ Reproducible Motor-Imagery EEG Decoding on BCICIV-2a with Strong Baselines, Per-
 ```
 
 ## Installation
-
 You can set this up in **one environment (simpler)** or **two environments (recommended)**.
 
 ### Option A — Single environment (simpler)
@@ -157,7 +149,6 @@ pip install brian2 elephant neo quantities
 ---
 
 ## Usage
-
 ### Run EEG benchmark (BCICIV_2a: baselines + per-subject + ablations)
 python .\src\eeg\project_bciciv2a_baselines_ablation.py
 
@@ -167,7 +158,6 @@ python .\src\spiking\spiking_sim_brian2_elephant.py
 ---
 
 ## Expected Results
-
 ### EEG (BCICIV_2a)
 - Per-subject accuracies for all **9 subjects**
 - Summary performance as **mean ± std** across subjects
@@ -189,7 +179,6 @@ python .\src\spiking\spiking_sim_brian2_elephant.py
 ---
 
 ## Notes (Skeptic-friendly / Clear claims)
-
 - **EEG pipeline (real data):** Decodes left vs right motor imagery from BCICIV_2a using MOABB/MNE + CSP features.
 - **Synthetic spiking pipeline (simulation study):** Generates spike trains with known labels and decodes them; this validates the decoding method under controlled ground truth.
 - **No physiological claim:** The spiking simulation is **not** presented as a biological ground-truth model of EEG—it's an exploratory modeling and decoding demonstration.
@@ -197,7 +186,6 @@ python .\src\spiking\spiking_sim_brian2_elephant.py
 ---
 
 ## Current Status
-
 - EEG benchmark complete (baselines + per-subject + mean±std + ablations)
 - Spiking simulation complete (Brian2 + Elephant + Bayesian decoding + plots)
 - Potential upgrades:
@@ -209,13 +197,11 @@ python .\src\spiking\spiking_sim_brian2_elephant.py
 ---
 
 ## License  
-
 This project is licensed under the terms specified in the **[LICENSE](./LICENSE)** file.  
 
 ---
 
 ## Citation / Acknowledgments
-
 - **BCI Competition IV Dataset 2a (BCICIV_2a)** for motor imagery EEG data
 - **MOABB** and **MNE** for standardized EEG dataset handling and preprocessing
 - **Brian2** for spiking simulation
