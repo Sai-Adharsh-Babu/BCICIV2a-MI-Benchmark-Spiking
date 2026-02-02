@@ -1,7 +1,6 @@
 # Reproducible Motor-Imagery EEG Decoding on BCICIV-2a with Strong Baselines, Per-Subject Analysis, and Ablations + Synthetic Spiking Simulation & Bayesian Decoding (Brian2 + Elephant)
 
 ## Overview
-
 This repository contains a **reproducible benchmark** for decoding **left-vs-right motor imagery** using the **BCI Competition IV-2a (BCICIV_2a)** EEG dataset, implemented with **MOABB/MNE** for standardized access and preprocessing.  
 It also includes a **separate simulation module** that generates synthetic spike trains using **Brian2**, analyzes them with **Elephant**, and performs **Bayesian decoding** (Naive Bayes) to recover known ground-truth states.
 
@@ -107,8 +106,8 @@ Reproducible Motor-Imagery EEG Decoding on BCICIV-2a with Strong Baselines, Per-
 │   │       └── bciciv2a_ablation_grid.csv
 │   └── spiking/
 │       ├── abstract.md
-│       └── tables/
-│           └── spiking_trial_features.csv
+│       ├── spiking_trial_features.csv
+│       └── spiking_summary.txt
 │
 ├── requirements/
 │   ├── eeg/
