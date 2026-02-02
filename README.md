@@ -80,18 +80,48 @@ However, the EEG pipeline uses **MOABB**, which can automatically download the d
 
 ## Repository Structure  
 ```
-neural-spike-simulation-bayes/
+Reproducible Motor-Imagery EEG Decoding on BCICIV-2a with Strong Baselines, Per-Subject Analysis, and Ablations + Synthetic Spiking Simulation & Bayesian Decoding (Brian2 + Elephant)/
 │
 ├── src/
-│   ├── neural_spike_bayes.py          # Simulation + Bayesian decoding
+│ ├── eeg/
+│ │ └── project_bciciv2a_baselines_ablation.py              # EEG pipeline: baselines + per-subject + ablations
+│ │
+│ └── spiking/
+│ └── spiking_sim_brian2_elephant.py                        # Spiking simulation + Elephant analysis + decoding
+│
+├── figures/
+│   ├── eeg/
+│   │   ├── bciciv2a_mean_std_bar.png
+│   │   ├── bciciv2a_per_subject_lines.png
+│   │   └── bciciv2a_ablation_grid.png
+│   └── spiking/
+│       ├── spiking_raster_example.png
+│       └── spiking_psth_example.png
+│
+├── reports/
+│   ├── eeg/
+│   │   ├── abstract.md
+│   │   └── tables/
+│   │       ├── bciciv2a_per_subject_results.csv
+│   │       ├── bciciv2a_summary_results.csv
+│   │       └── bciciv2a_ablation_grid.csv
+│   └── spiking/
+│       ├── abstract.md
+│       └── tables/
+│           └── spiking_trial_features.csv
+│
+├── requirements/
+│   ├── eeg/
+│   │   └── requirements.txt
+│   └── spiking/
+│       └── requirements.txt
 │
 ├── data/
-│   ├── README_DATA.md                 # Current dataset in use
+│   └── README_DATA.md
 │
-├── results/
-│   └── (to be added after experiment)
-│
-├── requirements.txt
+├── .gitignore
+├── .gitattributes
+├── LICENSE
 └── README.md
 
 ```
